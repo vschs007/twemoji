@@ -5,7 +5,6 @@ var
     'test.html'
   ]
 ;
-
 (function test() {'use strict';
   var page, url = urls.shift();
   if (!url) return phantom.exit(0);
