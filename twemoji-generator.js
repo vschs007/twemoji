@@ -3,7 +3,6 @@
  /*! Copyright Twitter Inc. and other contributors. Licensed under MIT *//*
      https://github.com/twitter/twemoji/blob/gh-pages/LICENSE
  */
-
 // dependencies
 var fs = require('fs');
 var http = require('http');
@@ -18,7 +17,6 @@ var assets = {
 // white spaces we don't want to catch via the RegExp
 // there is no asset equivalent for these
 var ignoreMissing = ['2002', '2003', '2005'];
-
 // basic utility to organize async code
 // see: http://webreflection.blogspot.co.uk/2012/03/tweet-sized-queue-system.html
 // or:  http://webreflection.blogspot.co.uk/2012/06/working-with-queues.html
@@ -28,7 +26,6 @@ function Queue(args, f) {
   }, 0);
   return args;
 }
-
 // main task
 Queue([
 
